@@ -14,5 +14,6 @@ Save task data in LocalStorage: All task data will be saved in the browser's Loc
 
 
 
--modified from FreeCodeCamp Project
--change styles.css && index.html
+- modified from FreeCodeCamp Project
+
+- change styles.css && index.html
