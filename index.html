@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <button id="open-task-form-btn" class="btn">Add Task</button>
+    
+    <form id="task-form" class="hidden">
+      <h2 class="form-title">Task Form</h2>
+      <label for="title-input">Title</label>
+      <input type="text" id="title-input" required>
+      
+      <label for="date-input">Date</label>
+      <input type="date" id="date-input" required>
+      
+      <label for="description-input">Description</label>
+      <textarea id="description-input" rows="3" required></textarea>
+      
+      <div class="form-btns">
+        <button type="submit" id="add-or-update-task-btn" class="btn">Add Task</button>
+        <button type="button" id="close-task-form-btn" class="btn">Close</button>
+      </div>
+    </form>
+
+    <dialog id="confirm-close-dialog">
+      <p>Are you sure you want to discard changes?</p>
+      <button id="discard-btn" class="btn">Discard</button>
+      <button id="cancel-btn" class="btn">Cancel</button>
+    </dialog>
+
+    <div id="tasks-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
